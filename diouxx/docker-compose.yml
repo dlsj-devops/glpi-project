@@ -1,20 +1,3 @@
-# Fonte
-
-https://hub.docker.com/r/diouxx/glpi
-
-# Passos
-
-- Criar o mariadb.env:
-
-```text
-MARIADB_ROOT_PASSWORD=diouxx
-MARIADB_DATABASE=glpidb
-MARIADB_USER=glpi_user
-MARIADB_PASSWORD=glpi
-```
-- Criar o docker-compose.yml:
-
-```text
 version: "3.2"
 
 services:
@@ -43,12 +26,3 @@ services:
     environment:
       - TIMEZONE=Europe/Brussels
     restart: always
-```
-
-- Executar
-
-```shell
-docker-compose up -d
-```
-
-
